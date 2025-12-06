@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"arr_find_el",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"arr_find_el",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_gamestart_give_materials",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_gamestart_give_materials",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
