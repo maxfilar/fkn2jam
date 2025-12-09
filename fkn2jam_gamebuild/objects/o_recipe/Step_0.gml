@@ -1,0 +1,1 @@
+y = lerp(y,ypos,.1)

@@ -1,0 +1,2 @@
+storage = noone
+ypos = ystart

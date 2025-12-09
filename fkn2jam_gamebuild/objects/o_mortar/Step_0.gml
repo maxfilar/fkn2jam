@@ -15,52 +15,42 @@ if pressed && array_length(_m) > 0 {
 if time_after_click > 0 time_after_click --
 
 if global.PLAYER.potions.cooking_progress >= 1 {
-	var _potion = noone;
+	var _potion = noone
 
-var mortar = _m;
+	var mortar = _m
 
-for (var i = 0; i < array_length(global.POTIONS); i++)
-{
-    var recipe = global.POTIONS[i].recipe;
+	for (var i = 0; i < array_length(global.POTIONS); i++) {
+		var recipe = global.POTIONS[i].recipe
+		if array_length(mortar) != array_length(recipe)
+			continue
+		
+		var temp_list = arr_duplicate(mortar)
+		var ok = true
+	
+		for (var j = 0; j < array_length(recipe); j++) {
+			var found = false
+		
+			for (var k = 0; k < array_length(temp_list); k++) {
+				if temp_list[k].name == recipe[j].name {
+					array_delete(temp_list, k, 1)
+					found = true
+					break
+				}
+			}
 
-    // Количество должно совпадать
-    if (array_length(mortar) != array_length(recipe))
-        continue;
-
-    // Создаем копию списка ингредиентов ступки
-    var temp_list = arr_duplicate(mortar);
-    var ok = true;
-
-    // Проверяем каждый ингредиент рецепта
-    for (var j = 0; j < array_length(recipe); j++)
-    {
-        var found = false;
-
-        // ищем совпадение по имени в копии списка
-        for (var k = 0; k < array_length(temp_list); k++)
-        {
-            if temp_list[k].name == recipe[j].name
-            {
-                // удаляем использованный ингредиент
-                array_delete(temp_list, k, 1);
-                found = true;
-                break;
-            }
-        }
-
-        if !found {
-            ok = false;
-            break;
-	        }
-	    }
-
-	    if (ok) {
-	        _potion = global.POTIONS[i];
-	        break;
-	    }
+			if !found {
+				ok = false
+				break
+			}
+		}
+		
+		if ok {
+			_potion = global.POTIONS[i]
+			break
+		}
 	}
 
-	show_message(_potion);
+	show_message(_potion)
 
 	
 	if _potion != noone {

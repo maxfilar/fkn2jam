@@ -59,34 +59,122 @@ global.MATERIALS = [
 ]
 
 global.POTIONS = [
+
 	new Potion(
 		"vinegar",
 		s_phs_potion_test1,
-		[ 
+		[
 			arr_find_el(global.MATERIALS,"Apple"),
 			arr_find_el(global.MATERIALS,"Apple"),
 			arr_find_el(global.MATERIALS,"Apple"),
 		],
 	),
+
 	new Potion(
 		"wine",
 		s_phs_potion_test1,
-		[ 
+		[
 			arr_find_el(global.MATERIALS,"Grape"),
 			arr_find_el(global.MATERIALS,"Grape"),
 			arr_find_el(global.MATERIALS,"Apple"),
 		],
 	),
+
 	new Potion(
 		"asparagus",
 		s_phs_potion_test1,
-		[ 
-			arr_find_el(global.MATERIALS,"Grape"),
+		[
+			arr_find_el(global.MATERIALS,"Ginger"),
 			arr_find_el(global.MATERIALS,"Ginger"),
 			arr_find_el(global.MATERIALS,"Lotos"),
 		],
 	),
+
+	new Potion(
+		"hun spirit",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Grape"),
+			arr_find_el(global.MATERIALS,"Ginger"),
+			arr_find_el(global.MATERIALS,"Ginger"),
+		],
+	),
+
+	new Potion(
+		"po spirit",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Ginger"),
+			arr_find_el(global.MATERIALS,"Grape"),
+			arr_find_el(global.MATERIALS,"Grape"),
+			//arr_find_el(global.MATERIALS,"Apple"),
+		],
+	),
+
+	new Potion(
+		"nephrite",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Lotos"),
+			arr_find_el(global.MATERIALS,"Ginger"),
+			arr_find_el(global.MATERIALS,"Grape"),
+		],
+	),
+
+	new Potion(
+		"liquid silver",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Apple"),
+			arr_find_el(global.MATERIALS,"Ginger"),
+			arr_find_el(global.MATERIALS,"Ginger"),
+			//arr_find_el(global.MATERIALS,"Lotos"),
+		],
+	),
+
+	new Potion(
+		"heavenly shen",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Apple"),
+			arr_find_el(global.MATERIALS,"Apple"),
+			arr_find_el(global.MATERIALS,"Lotos"),
+			//arr_find_el(global.MATERIALS,"Lotos"),
+		],
+	),
+
+	new Potion(
+		"underground spirit",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Grape"),
+			arr_find_el(global.MATERIALS,"Grape"),
+			arr_find_el(global.MATERIALS,"Grape"),
+		],
+	),
+
+	new Potion(
+		"blood cinnabar",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Ginger"),
+			arr_find_el(global.MATERIALS,"Apple"),
+			arr_find_el(global.MATERIALS,"Apple"), // added
+		],
+	),
+
+	new Potion(
+		"liquid gold",
+		s_phs_potion_test1,
+		[
+			arr_find_el(global.MATERIALS,"Ginger"),
+			arr_find_el(global.MATERIALS,"Apple"),
+			arr_find_el(global.MATERIALS,"Lotos"),
+		],
+	),
+
 ]
+
 
 global.POTIONS_LIST = []
 
