@@ -40,6 +40,7 @@ global.PLAYER = {
 	},
 	elixir: {
 		list: [],
+		recipe: [],
 		cooking_progress: 0,
 	},
 	triggers: {
@@ -181,5 +182,7 @@ global.POTIONS_LIST = []
 sc_inventory_create(global.PLAYER.inventory)
 
 sc_gamestart_give_materials(global.PLAYER.inventory.list,2)
+
+sc_elixir_recipe(global.PLAYER,3)
 
 alarm[0] = 60

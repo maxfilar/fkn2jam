@@ -45,6 +45,7 @@
     {"id":{"name":"r_recipes","path":"rooms/r_recipes/r_recipes.yy",},},
     {"id":{"name":"arr_duplicate","path":"scripts/arr_duplicate/arr_duplicate.yy",},},
     {"id":{"name":"arr_find_el","path":"scripts/arr_find_el/arr_find_el.yy",},},
+    {"id":{"name":"sc_elixir_recipe","path":"scripts/sc_elixir_recipe/sc_elixir_recipe.yy",},},
     {"id":{"name":"sc_gamestart_give_materials","path":"scripts/sc_gamestart_give_materials/sc_gamestart_give_materials.yy",},},
     {"id":{"name":"sc_inventory_add_item","path":"scripts/sc_inventory_add_item/sc_inventory_add_item.yy",},},
     {"id":{"name":"sc_inventory_count_empty","path":"scripts/sc_inventory_count_empty/sc_inventory_count_empty.yy",},},

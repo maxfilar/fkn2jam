@@ -50,8 +50,6 @@ if global.PLAYER.potions.cooking_progress >= 1 {
 		}
 	}
 
-	show_message(_potion)
-
 	
 	if _potion != noone {
 		array_push(global.POTIONS_LIST,_potion)
