@@ -6,14 +6,22 @@ if storage != noone && !global.PLAYER.triggers.picked_material {
 	)
 	
 	with _material {
-		storage = other.storage
+		storage = struct_deep_copy(other.storage)
+		storage.count = 1
 		pinned = true
 	}
+	storage.count --
 	
 	global.PLAYER.triggers.picked_material = true
-	storage = noone
-} else if storage == noone && _mat != noone && place_meeting(x,y,_mat) && _mat.storage != noone {
-	storage = _mat.storage
-	instance_destroy(_mat)
+	if storage.count == 0 {
+		storage = noone
+	}
+} else if _mat != noone && _mat.storage != noone &&  (storage == noone || storage.name == _mat.storage.name) && place_meeting(x,y,_mat) {
+	if storage == noone {
+		storage = _mat.storage
+	} else if storage.name == _mat.storage.name {
+		storage.count ++
+	}
 	global.PLAYER.triggers.picked_material = false
+	instance_destroy(_mat)
 }

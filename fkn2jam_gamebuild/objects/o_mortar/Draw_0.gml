@@ -1,8 +1,22 @@
-draw_self()
+var _m = global.PLAYER.potions.mortar_list
+var _len = array_length(_m)
 
-draw_text(x-64,y-64,$"{global.PLAYER.cooking.unclockwise_progress}")
-draw_text(x+64,y-64,$"{global.PLAYER.cooking.clockwise_progress}")
+if _len > 0 {
+    var radius = 156
+    var angle_step = 360 / _len
 
-for (var i = 0; i < array_length(storage); i++) {
-	draw_sprite(storage[i].sprite,0,x-32,y-32)
+    for (var i = 0; i < _len; i++) {
+        var ang = i * angle_step
+
+        var dx = x + lengthdir_x(radius, ang)
+        var dy = y + lengthdir_y(radius, ang)
+
+        _m[i].xpos = lerp(_m[i].xpos, dx, 0.05)
+        _m[i].ypos = lerp(_m[i].ypos, dy, 0.05)
+		
+		draw_sprite(s_mortar_element, 0, _m[i].xpos, _m[i].ypos)
+        draw_sprite(_m[i].sprite, 0, _m[i].xpos-32, _m[i].ypos-32)
+    }
 }
+
+draw_self()

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sctruct_deep_copy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sctruct_deep_copy",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

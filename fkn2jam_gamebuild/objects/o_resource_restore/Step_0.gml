@@ -1,0 +1,1 @@
+sprite_index = storage == noone ? noone : storage.sprite
