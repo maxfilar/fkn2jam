@@ -21,21 +21,22 @@ function Potion(_name,_sprite,_recipe) constructor {
 	xpos = 0
 	ypos = 0
 	count = 1
+	collected = false
 }
 
 global.PLAYER = {
 	inventory: {
 		list: [],
-		size: 5,
+		size: 6,
 		object: o_player_inventory_slot,
-		xpos: 32,
-		ypos: 64,
+		xpos: 64,
+		ypos: 128,
 	},
 	potions: {
 		mortar_list: [],
 		size: 3,
-		xpos: 256,
-		ypos: 256,
+		xpos: 544,
+		ypos: 800,
 		cooking_progress: 0,
 	},
 	elixir: {
@@ -183,6 +184,8 @@ sc_inventory_create(global.PLAYER.inventory)
 
 sc_gamestart_give_materials(global.PLAYER.inventory.list,2)
 
-sc_elixir_recipe(global.PLAYER,3)
+sc_elixir_recipe(global.PLAYER,5)
 
 alarm[0] = 60
+
+

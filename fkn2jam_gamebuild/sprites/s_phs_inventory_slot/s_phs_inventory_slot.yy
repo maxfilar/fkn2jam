@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"s_phs_inventory_slot",
-  "bboxMode":0,
-  "bbox_bottom":63,
+  "bboxMode":1,
+  "bbox_bottom":127,
   "bbox_left":0,
-  "bbox_right":63,
+  "bbox_right":127,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":128,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a5aeac19-c3e2-4d6d-bb4f-ce3411aef0b1","blendMode":0,"displayName":"default","isLocked":false,"name":"a5aeac19-c3e2-4d6d-bb4f-ce3411aef0b1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":128,
 }

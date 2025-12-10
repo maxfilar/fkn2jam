@@ -3,11 +3,11 @@
 function sc_show_recipes(){
 	var _p = global.POTIONS
 
-	var columns = 6
-	var cell_w = 108
-	var cell_h = 156
+	var columns = 5
+	var cell_w = 276
+	var cell_h = 400
 
-	var x_start = 128
+	var x_start = 256
 	var y_start = 32
 
 	for (var i = 0; i < array_length(_p); i++) {

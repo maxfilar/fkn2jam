@@ -3,7 +3,7 @@
 function sc_show_created_potions(){
 	for (var i = 0; i < array_length(global.POTIONS_LIST); i++) {
 		var _p = instance_create_layer(
-			global.PLAYER.potions.xpos + i * 72,
+			global.PLAYER.potions.xpos + i * 144,
 			global.PLAYER.potions.ypos,
 			"Instances",
 			o_potion

@@ -2,7 +2,7 @@ function sc_inventory_create(_struct){
 	for (var i = 0; i < _struct.size; i++) {
 		_x = _struct.xpos
 		_y = _struct.ypos
-		_diff = 72
+		_diff = 134
 		
 		var _slot = instance_create_layer(
 			_x,

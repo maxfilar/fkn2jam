@@ -1,7 +1,7 @@
 {
   "$GMSprite":"v2",
   "%Name":"s_phs_mortar",
-  "bboxMode":0,
+  "bboxMode":1,
   "bbox_bottom":127,
   "bbox_left":0,
   "bbox_right":127,
